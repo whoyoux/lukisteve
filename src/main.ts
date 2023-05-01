@@ -10,3 +10,5 @@ const main = () => {
 addEventListener('DOMContentLoaded', () => {
     main();
 })
+
+export { }
