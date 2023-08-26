@@ -27,7 +27,7 @@ class NewWindow {
 
 
         // }
-        let timmy = setInterval(() => {
+        setInterval(() => {
             let w = Math.random() * parseInt(window.screen.availWidth.toString());
             let h = Math.random() * parseInt(window.screen.availHeight.toString());
             win.resizeTo(w, h);
