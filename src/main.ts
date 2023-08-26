@@ -14,9 +14,10 @@ addEventListener('click', () => {
     music.loop = true;
     music.play();
 
-    while (true) {
+    setInterval(() => {
         new NewWindow();
-    }
+    }, 500);
+
 });
 
 class NewWindow {
