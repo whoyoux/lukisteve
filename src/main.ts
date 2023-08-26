@@ -33,6 +33,7 @@ class NewWindow {
         if (!win) return;
 
         win.document.write('<html><body></body></html>')
+        win.focus();
 
         setInterval(() => {
 
