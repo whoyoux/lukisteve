@@ -15,7 +15,10 @@ addEventListener('click', () => {
     music.play();
 
     setInterval(() => {
-        new NewWindow();
+        fetch('/').then(() => {
+            new NewWindow();
+        })
+
     }, timeClamp(500, 2000));
 
 });
@@ -32,10 +35,13 @@ class NewWindow {
         win.document.write('<html><body></body></html>')
 
         setInterval(() => {
+
+
             let w = Math.random() * parseInt(window.screen.availWidth.toString());
             let h = Math.random() * parseInt(window.screen.availHeight.toString());
             win.resizeTo(w, h);
             win.moveTo(w, h)
+
         }, 500);
     }
 }
