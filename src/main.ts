@@ -16,9 +16,13 @@ addEventListener('click', () => {
 
     setInterval(() => {
         new NewWindow();
-    }, 1000);
+    }, timeClamp(500, 2000));
 
 });
+
+const timeClamp = (min: number, max: number): number => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 class NewWindow {
     constructor() {
